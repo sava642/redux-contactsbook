@@ -77,3 +77,5 @@ npm install gh-pages --save-dev
 "deploy": "gh-pages -d build"
 homepage: ...
 git add -A
+git push
+npm run deploy
