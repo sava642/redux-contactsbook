@@ -1,7 +1,6 @@
 import React from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { addContact } from "../redux/contactSlice/contactSlice"
-import { useNavigate } from "react-router-dom"
 import shortid from 'shortid';
 import Swal from 'sweetalert2'
 import './LoginForm.css';
@@ -35,13 +34,11 @@ export const LoginForm = () => {
 			}
 			dispatch(addContact(state))
 		}
-
-		//navigate("/dashboard", { raplace: true })
 		form.reset()
 	}
 
 	const dispatch = useDispatch()
-	const navigate = useNavigate()
+
 
 	return (
 		<div className="card-front">
@@ -78,6 +75,5 @@ export const LoginForm = () => {
 				</div>
 			</div>
 		</div>
-
 	)
 }

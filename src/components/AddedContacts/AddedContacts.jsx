@@ -12,14 +12,9 @@ export const AddedContacts = () => {
 	const dispatch = useDispatch()
 	const arrayContacts = useSelector(state => state.contacts.arrContacts)
 	const filter = useSelector(state => state.filter)
-	console.log(arrayContacts)
-
 	const getVisiblContacts = arrayContacts.filter(contact =>
 		contact.name.toLowerCase().includes(filter.toLowerCase())
 	)
-
-
-
 
 	return (
 		<div className="card-back">

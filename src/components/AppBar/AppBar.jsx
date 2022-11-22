@@ -1,5 +1,4 @@
 import React from "react"
-import { useSelector } from "react-redux"
 import { AddedContacts } from "../AddedContacts/AddedContacts"
 import { LoginForm } from "../LoginForm/LoginForm"
 import './AppBar.css';
@@ -8,11 +7,10 @@ import { handleFrontBack } from "../redux/frontBackSlice/frontBackSlice"
 
 
 export const AppBar = () => {
-	//const isAdding = useSelector(state => state.contacts.isAdding)
+
 	const dispatch = useDispatch()
 
 	const handleChange = (e) => {
-
 		const value = e.target.checked
 		dispatch(handleFrontBack(value))
 		console.log(value)

@@ -1,9 +1,6 @@
 import React from "react"
 import { useDispatch } from "react-redux"
 import { setStatusFilter } from "../redux/filtersSlice/filtersSlice"
-import { useNavigate } from "react-router-dom"
-
-
 
 export const SetFilter = () => {
 
@@ -17,7 +14,6 @@ export const SetFilter = () => {
 	}
 
 	const dispatch = useDispatch()
-	const navigate = useNavigate()
 
 	return (
 
@@ -37,8 +33,6 @@ export const SetFilter = () => {
 				<button type="submit" className="btn mt-4">find</button>
 			</div>
 		</form>
-
-
 	)
 }
 
