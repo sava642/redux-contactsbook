@@ -18,9 +18,9 @@ export const AppBar = () => {
 
 	return (
 		<>
-			<a href="https://front.codes/" className="logo" target="_blank">
+			{/* <a href="https://front.codes/" className="logo" target="_blank">
 				<img src="https://assets.codepen.io/1462889/fcy.png" alt="" />
-			</a>
+			</a> */}
 
 			<div className="section">
 				<div className="container">
